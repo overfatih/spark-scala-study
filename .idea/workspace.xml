@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4411ed5-2886-434c-9212-e0e9f3ca0cdc" name="Changes" comment="first">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/business/abstracts/actions/ActionsService.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/business/abstracts/transformers/TransformersService.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/business/concretes/actions/ActionManager.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/business/concretes/transformers/TransformerManager.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/dataAccess/concretes/GetJbdcMetadata.scala" afterDir="false" />
+    <list default="true" id="c4411ed5-2886-434c-9212-e0e9f3ca0cdc" name="Changes" comment="add databaseInfo table with dbusername and dbpassword column.&#10;edit code for databaseInfo table">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/dbInfo.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/ApplicationMain.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ApplicationMain.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/api/controllers/SimpleApi.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/api/controllers/SimpleApi.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/business/abstracts/TableService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/business/abstracts/TableService.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/business/abstracts/UserService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/business/abstracts/UserService.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/business/concretes/TableManager.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/business/concretes/TableManager.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/business/concretes/UserManager.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/business/concretes/UserManager.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataAccess/abstracts/JdbcRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataAccess/abstracts/JdbcRepository.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/dataAccess/concretes/JdbcDao.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataAccess/concretes/JdbcDao.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/entities/concretes/Entity.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/entities/concretes/Entity.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +44,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -177,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725738770995</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add databaseInfo table with dbusername and dbpassword column.&#10;edit code for databaseInfo table">
+      <option name="closed" value="true" />
+      <created>1726443514220</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726443514220</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +193,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="add databaseInfo table with dbusername and dbpassword column.&#10;edit code for databaseInfo table" />
+    <option name="LAST_COMMIT_MESSAGE" value="add databaseInfo table with dbusername and dbpassword column.&#10;edit code for databaseInfo table" />
   </component>
 </project>
