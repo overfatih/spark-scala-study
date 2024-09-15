@@ -22,5 +22,6 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http-spray-json" % "10.5.3",
   "io.spray" %% "spray-json" % "1.3.6",
   "com.pauldijou" %% "jwt-core" % "5.0.0",
-  "com.pauldijou" %% "jwt-play-json" % "5.0.0"
+  "com.pauldijou" %% "jwt-play-json" % "5.0.0",
+  "ch.megard" %% "akka-http-cors" % "1.2.0"
 )

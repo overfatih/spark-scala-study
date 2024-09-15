@@ -1,7 +1,8 @@
 package com.profplay.studies
 package dataAccess.concretes
 
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import com.profplay.studies.core.utilities.results.{DataResult, SuccessDataResult}
+import org.apache.spark.sql.{DataFrame, DataFrameReader, SparkSession}
 import com.profplay.studies.dataAccess.abstracts.JdbcRepository
 import org.apache.spark.sql.functions.col
 
@@ -18,16 +19,18 @@ object JdbcDao extends JdbcRepository{
     getJdbc(spark,"postgres","123456", dbName, name)
   }
 
-  override def getJdbc(spark:SparkSession, user: String, password: String, dbName: String, tableName: String): DataFrame = {
+  override def getJdbc(spark: SparkSession, user: String, password: String, dbName: String, tableName: String): DataFrame = {
     val jdbcDF = spark.read
       .format("jdbc")
       .option("url", s"jdbc:postgresql://localhost:5432/$dbName")
       .option("dbtable", s"\"$tableName\"")
-      .option("user",user)
-      .option("password",password)
-      .load()
+      .option("user", user)
+      .option("password", password)
+    .load()
     jdbcDF
   }
+
+
 
   override def updateJdbc(jdbcDF:DataFrame, user: String, password: String, dbName: String, tableName: String): Long = {
     jdbcDF.write
@@ -47,6 +50,11 @@ object JdbcDao extends JdbcRepository{
     joinedDF
   }
 
+  override def getAction(dataFrameReader: DataFrameReader): DataResult[DataFrame] = {
+    /*gelen dataframe'in load işlemi yapılmasının bir yolunu bul*/
+    val dataFrame:DataFrame = dataFrameReader.load()
+    new SuccessDataResult[DataFrame](dataFrame,"action is done, success")
+  }
 
   import java.sql.Connection
   import java.sql.DriverManager
@@ -76,5 +84,12 @@ object JdbcDao extends JdbcRepository{
       statement.close()
       conn.close()
     }
+  }
+
+  override def filterTableDao(dataFrameBase:DataFrame, columnName: String, value: String): DataFrame = {
+    val dataFrame: DataFrame = dataFrameBase
+      .filter(col(columnName) === value)
+    dataFrame.show()
+    dataFrame
   }
 }

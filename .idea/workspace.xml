@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4411ed5-2886-434c-9212-e0e9f3ca0cdc" name="Changes" comment="first">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/business/abstracts/actions/ActionsService.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/business/abstracts/transformers/TransformersService.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/business/concretes/actions/ActionManager.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/business/concretes/transformers/TransformerManager.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/dataAccess/concretes/GetJbdcMetadata.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ApplicationMain.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ApplicationMain.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/api/controllers/SimpleApi.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/api/controllers/SimpleApi.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/business/abstracts/TableService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/business/abstracts/TableService.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/business/abstracts/UserService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/business/abstracts/UserService.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/business/concretes/TableManager.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/business/concretes/TableManager.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/business/concretes/UserManager.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/business/concretes/UserManager.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/dataAccess/abstracts/JdbcRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataAccess/abstracts/JdbcRepository.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/dataAccess/concretes/JdbcDao.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dataAccess/concretes/JdbcDao.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/entities/concretes/Entity.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/entities/concretes/Entity.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +60,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "overfatih"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;overfatih&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/overfatih/spark-scala-study.git",
-    "accountId": "fb0ab588-96da-4bf1-a085-53a6ea52a425"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/overfatih/spark-scala-study.git&quot;,
+    &quot;accountId&quot;: &quot;fb0ab588-96da-4bf1-a085-53a6ea52a425&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -77,7 +92,7 @@
     &quot;Application.ApplicationMain.executor&quot;: &quot;Run&quot;,
     &quot;Application.SimpleApi.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/overf/IdeaProjects/sparkapi/src/main/scala/dataAccess&quot;
   }
@@ -154,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725736624260</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first">
+      <option name="closed" value="true" />
+      <created>1725738770995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725738770995</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

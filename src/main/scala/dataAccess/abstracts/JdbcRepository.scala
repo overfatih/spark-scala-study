@@ -1,7 +1,8 @@
 package com.profplay.studies
 package dataAccess.abstracts
 
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import com.profplay.studies.core.utilities.results.DataResult
+import org.apache.spark.sql.{DataFrame, DataFrameReader, SparkSession}
 
 import java.sql.Connection
 
@@ -15,5 +16,7 @@ trait JdbcRepository {
 
   def getConnection(dbName: String): Connection
   def updateLogedStatus(username: String, password: String, dbName:String, tableName:String): Int
+  def getAction(dataFrameReader: DataFrameReader): DataResult[DataFrame]
+  def filterTableDao(dataFrameBase:DataFrame, columnName:String, value:String):DataFrame
 }
 

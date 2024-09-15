@@ -1,6 +1,6 @@
 package com.profplay.studies
 
-import org.apache.spark.sql.SparkSession
+import dataAccess.concretes.GetJbdcMetadata
 
 object ApplicationMain {
   def main(args: Array[String]): Unit = {
